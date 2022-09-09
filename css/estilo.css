@@ -1,0 +1,575 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@100;200;300&display=swap");
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    min-height: 100%;
+}
+
+header .header {
+    grid-area: header;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+}
+
+header nav .bgNavcolor {
+    background-color: #DBCCBB;
+}
+
+header nav div a .logonav {
+    padding-left: 20px;
+}
+
+header nav .barrita {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 10px;
+    list-style-type: none;
+    line-height: 1.5rem;
+    padding: 10px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+header nav .menu {
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: "Inter", sans-serif;
+    color: #1C1915;
+    padding: 10px;
+    margin: 10px;
+}
+
+header nav form {
+    text-align: right;
+    padding: 10px;
+    margin: 10px;
+}
+
+header .carousel1 {
+    max-width: 100%;
+    max-height: 600px;
+    size-adjust: 100%;
+}
+
+header .portadaIndex {
+    font-family: "Inter", sans-serif;
+    font-size: 2.5rem;
+    color: #1C1915;
+    padding-top: 20px;
+}
+
+footer .footerdec {
+    background: linear-gradient(220deg, #DBCCBB, #b5997699);
+}
+
+footer section .footer {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+footer section .iframe {
+    grid-area: iframe;
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    width: 500px;
+    margin: 20px;
+}
+
+footer section .footerSectionp {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    text-align: center;
+    font: "Inter", sans-serif;
+    color: #1C1915;
+    font-size: 1.8rem;
+    margin: 20px;
+}
+
+footer .iconfooter {
+    display: inline;
+    flex-direction: column;
+    width: 40px;
+    height: 40px;
+    align-content: center;
+}
+
+h2 .esloganFooter {
+    display: flex;
+    align-content: right;
+    text-align: right;
+    font: "Inter", sans-serif;
+    font-size: 3rem;
+    color: #1C1915;
+    margin: 20px;
+}
+
+.footerfoot {
+    grid-area: footerfoot;
+}
+
+main section .div {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+main section .div figure {
+    text-align: center;
+    align-items: center;
+}
+
+main section .div figure figcaption {
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+}
+
+main section .div figure figcaption p {
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+}
+
+main section .imgproductos {
+    max-height: 100%;
+    margin: 20px;
+}
+
+main section .div figure img {
+    padding: 20px;
+    margin: 20px;
+}
+
+main section div p {
+    padding: auto;
+    margin: auto;
+}
+
+div main div h1 .textCuidados {
+    font-family: "Inter", sans-serif;
+    font-size: 3.5rem;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+div main div h2 .textpreg {
+    font-family: "Inter", sans-serif;
+    font-size: 3rem;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+div main div p .textIntro {
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+div main div ul li .textli {
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+    list-style-type: disc;
+    padding: 5px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+div main div h3 .eslogan2 {
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+main .containerNos {
+    display: grid;
+    grid-template-columns: 50%, 50%;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "NosotrostextT NosotrostextT" "Nosotrostext1 FotoAnillosnos1" "FotoNos2 Nosotrostext2" "Nosotrostext3 Nosotrostext3" "iframespotify iframespotify";
+    align-items: center;
+    justify-items: center;
+}
+
+main section .NosotrostextT {
+    grid-area: NosotrostextT;
+}
+
+main section .NosotrostextT h1 .textnosotros {
+    font-family: "Inter", sans-serif;
+    font-size: 3.5rem;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+main section .Nosotrostext1 {
+    grid-area: Nosotrostext1;
+}
+
+main section .Nosotrostext1 p .textnosotrosp {
+    font-family: "Inter", sans-serif;
+    font-size: 2.5rem;
+    text-align: left;
+    padding: 10px;
+    margin: 20px;
+}
+
+main section .FotoAnillosnos1 {
+    grid-area: FotoAnillosnos1;
+}
+
+main section .FotoNos2 {
+    grid-area: FotoNos2;
+}
+
+main section .Nosotrostext2 {
+    grid-area: Nosotrostext2;
+}
+
+main section .Nosotrostext2 p .textnosotrosp2 {
+    font-family: "Inter", sans-serif;
+    font-size: 2.5rem;
+    text-align: right;
+    padding: 30px;
+    margin: 20px;
+}
+
+main section .Nosotrostext3 {
+    grid-area: Nosotrostext3;
+}
+
+main section .Nosotrostext3 p .textp {
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+}
+
+main section .iframespotify {
+    grid-area: iframespotify;
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    height: 450px;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+main .containerNos section img {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    transition: padding 0.5s;
+}
+
+main .containerNos section img:hover {
+    padding: 20px;
+}
+
+main .containerNos section iframe {
+    padding-bottom: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.containerIndex {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    gap: 30px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "header" "contenido" "newsletter" "footerfoot";
+}
+
+.Contenido {
+    grid-area: contenido;
+}
+
+.newsletter {
+    grid-area: newsletter;
+}
+
+.footerfoot {
+    grid-area: footerfoot;
+}
+
+.bgBodycolor {
+    background-color: #F0E9E1;
+}
+
+.bgNavcolor {
+    background-color: #DBCCBB;
+}
+
+.footerdec {
+    background: linear-gradient(220deg, #DBCCBB, #b5997699);
+}
+
+#botonera img {
+    width: 150px;
+}
+
+.sacarItemlist {
+    list-style-type: none;
+}
+
+.contenido {
+    display: grid;
+    max-width: 100%;
+    margin: 20px;
+    padding: 40px;
+}
+
+.imgIcon {
+    display: flex;
+    width: 40px;
+    align-self: center;
+}
+
+.contenidoflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    opacity: 0.8;
+    transition: width 0.5s;
+}
+
+.contenidoflex:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    width: 101%;
+}
+
+.cardcard1 {
+    transition: width 0.2;
+}
+
+.cardcard2 {
+    transition: width 0.4;
+}
+
+.cardcard3 {
+    transition: width 0.6;
+}
+
+.contenidofont {
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: "Inter", sans-serif;
+    color: #1C1915;
+    display: inline-block;
+    flex-direction: column;
+    transition: font-size 0.5s;
+}
+
+.contenidofont:hover {
+    font-size: 2.1rem;
+}
+
+.newslettlerInfo {
+    display: grid;
+    grid-template-rows: 1fr;
+    text-decoration: none;
+    font: "Inter", sans-serif;
+    font-size: 1.8rem;
+    color: #1C1915;
+    width: 450px;
+    margin: auto;
+    padding: 30px 40px;
+    background-color: #b5997699;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+}
+
+form h2 {
+    text-align: center;
+}
+
+#button {
+    background: linear-gradient(#4C371C, #2c2318);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    width: 370px;
+    margin-top: 20px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+#button:hover {
+    opacity: 1;
+}
+
+.containerprod {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.fotosMain {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.h1productos {
+    display: flex;
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    margin-top: 20px;
+}
+
+.h2categorias {
+    display: flex;
+    flex-direction: row;
+    font-family: "Inter", sans-serif;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.categoria2 {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    font: "Inter", sans-serif;
+    font-size: 1.8rem;
+    color: #1C1915;
+    margin-top: 20px;
+    width: 50px;
+}
+
+.formtalles {
+    list-style-type: none;
+    text-decoration: none;
+    text-align: left;
+    font: "Inter", sans-serif;
+    font-size: 1.5rem;
+    color: #1C1915;
+    margin-top: 20px;
+}
+
+.containerCuidados {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas: "cuidadostittle" "cuidadostext" "cuidadoseslogan";
+}
+
+.cuidadostittle {
+    grid-area: cuidadostittle;
+}
+
+.cuidadostext {
+    grid-area: cuidadostext;
+}
+
+.cuidadoseslogan {
+    grid-area: cuidadoseslogan;
+}
+
+main .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 30px 20px;
+    grid-auto-flow: row;
+    grid-template-areas: "contactoText contactoForm";
+    justify-items: center;
+    align-items: center;
+}
+
+.contactoText {
+    grid-area: contactoText;
+}
+
+.contactoForm {
+    grid-area: contactoForm;
+}
+
+.contacto,
+.textformp {
+    font-family: "Inter", sans-serif;
+    font-size: 3.5rem;
+    text-align: center;
+    padding: 30px;
+    margin: 20px;
+}
+
+.textformp {
+    font-size: 2.5rem;
+}
+
+.contactform {
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 1.8rem;
+    color: #1C1915;
+    margin: 40px;
+    padding: 20px, 10px;
+}
+
+.formContacto {
+    display: grid;
+    grid-template-rows: 1fr;
+    text-decoration: none;
+    font: "Inter", sans-serif;
+    font-size: 1.8rem;
+    color: #1C1915;
+    width: 450px;
+    margin: auto;
+    padding: 30px 40px;
+    background-color: #b5997699;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+}

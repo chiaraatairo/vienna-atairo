@@ -1,0 +1,60 @@
+footer {
+    .footerdec {
+        background: linear-gradient(220deg, $secondaryColor, $thirdColor);
+    }
+    section {
+        $footerEstilos: ( centro: center, dF: flex, fD: row);
+        .footer {
+            width: 100%;
+            justify-content: map-get($footerEstilos, centro);
+            align-items: map-get($footerEstilos, centro);
+            justify-items: map-get($footerEstilos, centro);
+            display: map-get($footerEstilos, dF);
+            flex-direction: map-get($footerEstilos, fD);
+        }
+        @mixin size ($width, $height) {
+            height: $height;
+            width: $width;
+        }
+        .iframe {
+            grid-area: iframe;
+            display: flex;
+            flex-direction: column;
+            @include size(500px, 450px);
+            margin: 20px;
+        }
+        .footerSectionp {
+            display: flex;
+            flex-direction: column;
+            text-decoration: $sacarDeco;
+            text-align: center;
+            font: $mainFont;
+            color: $fontColor;
+            font-size: 1.8rem;
+            margin: 20px;
+        }
+    }
+    .iconfooter {
+        display: inline;
+        flex-direction: column;
+        width: 40px;
+        height: 40px;
+        align-content: center;
+    }
+}
+
+h2 {
+    .esloganFooter {
+        display: flex;
+        align-content: right;
+        text-align: right;
+        font: $mainFont;
+        font-size: 3rem;
+        color: $fontColor;
+        margin: 20px;
+    }
+}
+
+.footerfoot {
+    grid-area: footerfoot;
+}

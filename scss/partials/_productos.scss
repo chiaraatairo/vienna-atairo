@@ -1,0 +1,52 @@
+    main {
+        section {
+            .div {
+                margin: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-content: center;
+            }
+            .div {
+                figure {
+                    text-align: center;
+                    align-items: center;
+                }
+            }
+            .div {
+                figure {
+                    figcaption {
+                        font-family: $mainFont;
+                        font-size: 2rem;
+                    }
+                }
+            }
+            .div {
+                figure {
+                    figcaption {
+                        p {
+                            font-family: $mainFont;
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+            .imgproductos {
+                max-height: 100%;
+                margin: 20px;
+            }
+            .div {
+                figure {
+                    img {
+                        padding: 20px;
+                        margin: 20px;
+                    }
+                }
+            }
+            div {
+                p {
+                    padding: auto;
+                    margin: auto;
+                }
+            }
+        }
+    }

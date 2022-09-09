@@ -1,0 +1,270 @@
+@import "../scss/partials/variables";
+@import "../scss/partials/reset";
+@import "../scss/partials/header";
+@import "../scss/partials/footer";
+@import "../scss/partials/productos";
+@import "../scss/partials/cuidados";
+@import "../scss/partials/nosotros";
+.containerIndex {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    gap: 30px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "header""contenido""newsletter""footerfoot"
+}
+
+.Contenido {
+    grid-area: contenido;
+}
+
+.newsletter {
+    grid-area: newsletter;
+}
+
+.footerfoot {
+    grid-area: footerfoot;
+}
+
+.bgBodycolor {
+    background-color: $mainColor;
+}
+
+.bgNavcolor {
+    background-color: $secondaryColor;
+}
+
+.footerdec {
+    background: linear-gradient(220deg, $secondaryColor, $thirdColor);
+}
+
+#botonera img {
+    width: 150px;
+}
+
+.sacarItemlist {
+    list-style-type: $sacarDeco;
+}
+
+.contenido {
+    display: grid;
+    max-width: 100%;
+    margin: 20px;
+    padding: 40px;
+}
+
+.imgIcon {
+    display: flex;
+    width: 40px;
+    align-self: center;
+}
+
+.contenidoflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    opacity: 0.8;
+    transition: width 0.5s;
+    &:hover {
+        opacity: 1;
+        transform: scale(1.1);
+        width: 101%;
+    }
+}
+
+$cards: (card1: 0.2, card2: 0.4, card3: 0.6);
+@each $card,
+$width in $cards {
+    .card#{$card} {
+        transition: width $width;
+    }
+}
+
+.contenidofont {
+    text-decoration: $sacarDeco;
+    font-size: 2rem;
+    font-family: $mainFont;
+    color: $fontColor;
+    display: inline-block;
+    flex-direction: column;
+    transition: font-size 0.5s;
+    &:hover {
+        font-size: 2.1rem;
+    }
+}
+
+.newslettlerInfo {
+    display: grid;
+    grid-template-rows: 1fr;
+    text-decoration: $sacarDeco;
+    font: $mainFont;
+    font-size: 1.8rem;
+    color: $fontColor;
+    width: 450px;
+    margin: auto;
+    padding: 30px 40px;
+    background-color: $thirdColor;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+}
+
+form h2 {
+    text-align: $textCenter;
+}
+
+#button {
+    background: $buttonColor;
+    color: #fff;
+    border: $sacarDeco;
+    padding: 10px;
+    width: 370px;
+    margin-top: 20px;
+    cursor: pointer;
+    opacity: 0.9;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.containerprod {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.fotosMain {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.h1productos {
+    display: flex;
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    margin-top: 20px;
+}
+
+.h2categorias {
+    display: flex;
+    flex-direction: row;
+    font-family: $mainFont;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.categoria2 {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    font: $mainFont;
+    font-size: 1.8rem;
+    color: $fontColor;
+    margin-top: 20px;
+    width: 50px;
+}
+
+.formtalles {
+    list-style-type: none;
+    text-decoration: none;
+    text-align: left;
+    font: $mainFont;
+    font-size: 1.5rem;
+    color: $fontColor;
+    margin-top: 20px;
+}
+
+.containerCuidados {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px 20px;
+    grid-auto-flow: row;
+    grid-template-areas: "cuidadostittle""cuidadostext""cuidadoseslogan";
+}
+
+.cuidadostittle {
+    grid-area: cuidadostittle;
+}
+
+.cuidadostext {
+    grid-area: cuidadostext;
+}
+
+.cuidadoseslogan {
+    grid-area: cuidadoseslogan;
+}
+
+main {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        gap: 30px 20px;
+        grid-auto-flow: row;
+        grid-template-areas: "contactoText contactoForm";
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+.contactoText {
+    grid-area: contactoText;
+}
+
+.contactoForm {
+    grid-area: contactoForm;
+}
+
+.contacto {
+    font-family: $mainFont;
+    font-size: 3.5rem;
+    text-align: $textCenter;
+    padding: 30px;
+    margin: 20px;
+}
+
+.textformp {
+    @extend .contacto;
+    font-size: 2.5rem;
+}
+
+.contactform {
+    list-style-type: $sacarDeco;
+    text-decoration: $sacarDeco;
+    text-align: $textCenter;
+    font-family: $mainFont;
+    font-size: 1.8rem;
+    color: $fontColor;
+    margin: 40px;
+    padding: 20px, 10px
+}
+
+.formContacto {
+    display: grid;
+    grid-template-rows: 1fr;
+    text-decoration: $sacarDeco;
+    font: $mainFont;
+    font-size: 1.8rem;
+    color: $fontColor;
+    width: 450px;
+    margin: auto;
+    padding: 30px 40px;
+    background-color: $thirdColor;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+}

@@ -1,0 +1,15 @@
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $mainFont;
+    min-height: 100%;
+}

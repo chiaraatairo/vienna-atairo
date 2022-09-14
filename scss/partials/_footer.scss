@@ -3,15 +3,6 @@ footer {
         background: linear-gradient(220deg, $secondaryColor, $thirdColor);
     }
     section {
-        $footerEstilos: ( centro: center, dF: flex, fD: row);
-        .footer {
-            width: 100%;
-            justify-content: map-get($footerEstilos, centro);
-            align-items: map-get($footerEstilos, centro);
-            justify-items: map-get($footerEstilos, centro);
-            display: map-get($footerEstilos, dF);
-            flex-direction: map-get($footerEstilos, fD);
-        }
         @mixin size ($width, $height) {
             height: $height;
             width: $width;
@@ -27,11 +18,14 @@ footer {
             display: flex;
             flex-direction: column;
             text-decoration: $sacarDeco;
-            text-align: center;
+            text-align: $Center;
             font: $mainFont;
             color: $fontColor;
             font-size: 1.8rem;
             margin: 20px;
+            a {
+                text-decoration: $sacarDeco;
+            }
         }
     }
     .iconfooter {
@@ -39,7 +33,7 @@ footer {
         flex-direction: column;
         width: 40px;
         height: 40px;
-        align-content: center;
+        align-content: $Center;
     }
 }
 

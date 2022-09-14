@@ -1,0 +1,50 @@
+ main {
+     section {
+         div {
+             margin: 20px;
+             display: flex;
+             justify-content: space-between;
+             align-content: $Center;
+         }
+         figure {
+             text-align: $Center;
+             align-items: $Center;
+             margin: 5px;
+             &:hover {
+                 border-style: solid;
+                 border-color: $secondaryColor;
+                 border-radius: 10px;
+                 background-color: $secondaryColor;
+             }
+             figcaption {
+                 font-family: $mainFont;
+                 font-size: 2rem;
+                 opacity: 0.8;
+                 &:hover {
+                     text-decoration: underline;
+                     cursor: pointer;
+                     text-decoration-color: $thirdColor;
+                     opacity: 1;
+                 }
+             }
+             figure {
+                 p {
+                     font-family: 'Inter', ;
+                     font-size: 1.5rem;
+                     padding: auto;
+                     margin: auto;
+                 }
+             }
+             .imgproductos {
+                 max-height: 100%;
+                 margin: 20px;
+             }
+             figure {
+                 img {
+                     padding: 20px;
+                     margin: 20px;
+                 }
+             }
+         }
+     }
+ }

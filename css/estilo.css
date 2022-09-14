@@ -1,552 +1,632 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@100;200;300&display=swap");
 html {
-    font-size: 62.5%;
-    height: 100%;
-}
+  font-size: 62.5%;
+  height: 100%; }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
 
 body {
-    font-family: "Inter", sans-serif;
-    min-height: 100%;
-}
+  font-family: "Inter", sans-serif;
+  min-height: 100%; }
 
 header .header {
-    grid-area: header;
-}
+  grid-area: header; }
 
 header nav {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    width: 100%;
-}
-
-header nav .bgNavcolor {
-    background-color: #DBCCBB;
-}
-
-header nav div a .logonav {
-    padding-left: 20px;
-}
-
-header nav .barrita {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: 10px;
-    list-style-type: none;
-    line-height: 1.5rem;
-    padding: 10px;
-    margin: 10px;
-    overflow: hidden;
-}
-
-header nav .menu {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  border: 0; }
+  header nav .bgNavcolor {
+    background-color: #DBCCBB; }
+  header nav img {
+    width: 150px; }
+  header nav div a .logonav {
+    padding-left: 20px; }
+  header nav .menu {
     text-align: center;
     text-decoration: none;
     font-size: 1.5rem;
     font-family: "Inter", sans-serif;
     color: #1C1915;
     padding: 10px;
-    margin: 10px;
-}
-
-header nav form {
+    margin: 10px; }
+    header nav .menu:hover {
+      text-decoration: underline;
+      text-decoration-color: #b5997699; }
+  header nav form {
     text-align: right;
     padding: 10px;
-    margin: 10px;
-}
+    margin: 10px; }
+    header nav form button #buttonNav {
+      border-color: #2c2318;
+      color: #1C1915; }
+      header nav form button #buttonNav:hover {
+        color: #fff;
+        background-color: #2c2318; }
 
 header .carousel1 {
-    max-width: 100%;
-    max-height: 600px;
-    size-adjust: 100%;
-}
+  max-width: 100%;
+  max-height: 600px;
+  size-adjust: 100%; }
 
 header .portadaIndex {
-    font-family: "Inter", sans-serif;
-    font-size: 2.5rem;
-    color: #1C1915;
-    padding-top: 20px;
-}
+  font-family: "Inter", sans-serif;
+  font-size: 2.5rem;
+  color: #1C1915;
+  padding-top: 20px; }
 
 footer .footerdec {
-    background: linear-gradient(220deg, #DBCCBB, #b5997699);
-}
-
-footer section .footer {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    display: flex;
-    flex-direction: row;
-}
+  background: linear-gradient(220deg, #DBCCBB, #b5997699); }
 
 footer section .iframe {
-    grid-area: iframe;
-    display: flex;
-    flex-direction: column;
-    height: 450px;
-    width: 500px;
-    margin: 20px;
-}
+  grid-area: iframe;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+  width: 500px;
+  margin: 20px; }
 
 footer section .footerSectionp {
-    display: flex;
-    flex-direction: column;
-    text-decoration: none;
-    text-align: center;
-    font: "Inter", sans-serif;
-    color: #1C1915;
-    font-size: 1.8rem;
-    margin: 20px;
-}
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  text-align: center;
+  font: "Inter", sans-serif;
+  color: #1C1915;
+  font-size: 1.8rem;
+  margin: 20px; }
+  footer section .footerSectionp a {
+    text-decoration: none; }
 
 footer .iconfooter {
-    display: inline;
-    flex-direction: column;
-    width: 40px;
-    height: 40px;
-    align-content: center;
-}
+  display: inline;
+  flex-direction: column;
+  width: 40px;
+  height: 40px;
+  align-content: center; }
 
 h2 .esloganFooter {
-    display: flex;
-    align-content: right;
-    text-align: right;
-    font: "Inter", sans-serif;
-    font-size: 3rem;
-    color: #1C1915;
-    margin: 20px;
-}
+  display: flex;
+  align-content: right;
+  text-align: right;
+  font: "Inter", sans-serif;
+  font-size: 3rem;
+  color: #1C1915;
+  margin: 20px; }
 
 .footerfoot {
-    grid-area: footerfoot;
-}
+  grid-area: footerfoot; }
 
-main section .div {
-    margin: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-}
+main section div {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center; }
 
-main section .div figure {
-    text-align: center;
-    align-items: center;
-}
-
-main section .div figure figcaption {
+main section figure {
+  text-align: center;
+  align-items: center;
+  margin: 5px; }
+  main section figure:hover {
+    border-style: solid;
+    border-color: #DBCCBB;
+    border-radius: 10px;
+    background-color: #DBCCBB; }
+  main section figure figcaption {
     font-family: "Inter", sans-serif;
     font-size: 2rem;
-}
-
-main section .div figure figcaption p {
-    font-family: "Inter", sans-serif;
+    opacity: 0.8; }
+    main section figure figcaption:hover {
+      text-decoration: underline;
+      cursor: pointer;
+      text-decoration-color: #b5997699;
+      opacity: 1; }
+  main section figure figure p {
+    font-family: "Inter";
     font-size: 1.5rem;
-}
-
-main section .imgproductos {
-    max-height: 100%;
-    margin: 20px;
-}
-
-main section .div figure img {
-    padding: 20px;
-    margin: 20px;
-}
-
-main section div p {
     padding: auto;
-    margin: auto;
-}
+    margin: auto; }
+  main section figure .imgproductos {
+    max-height: 100%;
+    margin: 20px; }
+  main section figure figure img {
+    padding: 20px;
+    margin: 20px; }
 
-div main div h1 .textCuidados {
+div main {
+  display: flex;
+  flex-direction: column; }
+  div main div .cuidadostittle {
+    grid-area: cuidadostittle; }
+  div main div h1 .textCuidados {
     font-family: "Inter", sans-serif;
     font-size: 3.5rem;
     padding: 20px;
     margin: 20px;
-    text-align: center;
-}
-
-div main div h2 .textpreg {
+    text-align: center; }
+  div main div h2 .textpreg {
     font-family: "Inter", sans-serif;
     font-size: 3rem;
     padding: 20px;
     margin: 20px;
-    text-align: center;
-}
-
-div main div p .textIntro {
+    text-align: center; }
+  div main div .cuidadostext {
+    grid-area: cuidadostext; }
+  div main div p .textIntro {
     font-family: "Inter", sans-serif;
     font-size: 2rem;
     padding: 10px;
     margin: 20px;
-    text-align: center;
-}
-
-div main div ul li .textli {
+    text-align: center; }
+  div main div ul li .textli {
     font-family: "Inter", sans-serif;
     font-size: 2rem;
     list-style-type: disc;
     padding: 5px;
     margin-right: 50px;
-    margin-left: 50px;
-}
-
-div main div h3 .eslogan2 {
+    margin-left: 50px; }
+  div main div .cuidadoseslogan {
+    grid-area: cuidadoseslogan; }
+  div main div h3 .eslogan2 {
     font-family: "Inter", sans-serif;
     font-size: 2rem;
     padding: 10px;
     margin: 20px;
-    text-align: center;
-}
+    text-align: center; }
 
-main .containerNos {
-    display: grid;
-    grid-template-columns: 50%, 50%;
-    grid-template-rows: repeat(5, auto);
-    grid-template-areas: "NosotrostextT NosotrostextT" "Nosotrostext1 FotoAnillosnos1" "FotoNos2 Nosotrostext2" "Nosotrostext3 Nosotrostext3" "iframespotify iframespotify";
-    align-items: center;
-    justify-items: center;
-}
+main .containerNos section h1 .textnosotros {
+  font-family: "Inter", sans-serif;
+  font-size: 3.5rem;
+  text-align: center;
+  padding: 10px;
+  margin: 20px; }
 
-main section .NosotrostextT {
-    grid-area: NosotrostextT;
-}
+main .containerNos section p .textnosotrosp {
+  font-family: "Inter", sans-serif;
+  font-size: 2.5rem;
+  text-align: left;
+  padding: 10px;
+  margin: 20px; }
 
-main section .NosotrostextT h1 .textnosotros {
-    font-family: "Inter", sans-serif;
-    font-size: 3.5rem;
-    text-align: center;
-    padding: 10px;
-    margin: 20px;
-}
+main .containerNos section p .textnosotrosp2 {
+  font-family: "Inter", sans-serif;
+  font-size: 2.5rem;
+  text-align: right;
+  padding: 30px;
+  margin: 20px; }
 
-main section .Nosotrostext1 {
-    grid-area: Nosotrostext1;
-}
+main .containerNos section p .textp {
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  padding: 10px;
+  margin: 20px; }
 
-main section .Nosotrostext1 p .textnosotrosp {
-    font-family: "Inter", sans-serif;
-    font-size: 2.5rem;
-    text-align: left;
-    padding: 10px;
-    margin: 20px;
-}
-
-main section .FotoAnillosnos1 {
-    grid-area: FotoAnillosnos1;
-}
-
-main section .FotoNos2 {
-    grid-area: FotoNos2;
-}
-
-main section .Nosotrostext2 {
-    grid-area: Nosotrostext2;
-}
-
-main section .Nosotrostext2 p .textnosotrosp2 {
-    font-family: "Inter", sans-serif;
-    font-size: 2.5rem;
-    text-align: right;
-    padding: 30px;
-    margin: 20px;
-}
-
-main section .Nosotrostext3 {
-    grid-area: Nosotrostext3;
-}
-
-main section .Nosotrostext3 p .textp {
-    font-family: "Inter", sans-serif;
-    font-size: 2rem;
-    text-align: center;
-    padding: 10px;
-    margin: 20px;
-}
-
-main section .iframespotify {
-    grid-area: iframespotify;
-    display: flex;
-    flex-direction: row;
-    width: 900px;
-    height: 450px;
-    margin: 20px;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-}
-
-main .containerNos section img {
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-    transition: padding 0.5s;
-}
-
-main .containerNos section img:hover {
-    padding: 20px;
-}
+main .containerNos section .iframespotify {
+  grid-area: iframespotify;
+  display: flex;
+  flex-direction: row;
+  width: 900px;
+  height: 450px;
+  margin: 20px;
+  align-items: center;
+  justify-content: center;
+  align-content: center; }
 
 main .containerNos section iframe {
-    padding-bottom: 40px;
-    padding-right: 20px;
-    padding-left: 20px;
-}
+  padding-bottom: 40px;
+  padding-right: 20px;
+  padding-left: 20px; }
+
+main .containerNos section img {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  transition: padding 0.5s;
+  border-style: groove; }
+  main .containerNos section img:hover {
+    padding: 20px; }
+
+@media (max-width: 965px) {
+  footer {
+    display: flex;
+    flex-direction: row; }
+    footer .footerdec {
+      background-color: #DBCCBB; }
+    footer .footer .footerfoot {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr; }
+    footer .footer .iframe {
+      width: 800px; }
+  /* NOSOTROS */
+  .containerNos {
+    display: flex;
+    flex-direction: column; }
+    .containerNos .Nosotrostext1 {
+      text-align: center; }
+    .containerNos .textnosotrosp2 {
+      text-align: center; }
+    .containerNos section .FotoNos2 img {
+      display: flex;
+      flex-direction: column;
+      width: 500px;
+      padding: 0;
+      justify-content: center; }
+    .containerNos .FotoAnillosnos1 section img {
+      display: flex;
+      flex-direction: column;
+      width: 500px;
+      padding: 0;
+      margin: 0;
+      justify-content: center; }
+    .containerNos .iframespotify {
+      width: 800px; }
+  /* CONTACTO */
+  .container {
+    display: flex;
+    flex-direction: column; }
+    .container .contactform {
+      width: 800px; }
+    .container .contacto, main .container .textformp {
+      text-align: center; }
+    .container .textformp {
+      text-align: center; }
+    .container .logonav img {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-items: center; } }
+
+@media (max-width: 767px) {
+  body {
+    background-color: #F0E9E1; }
+  /* INDEX */
+  .contenidoflex {
+    display: flex;
+    flex-direction: column; }
+  .footer {
+    display: flex;
+    flex-direction: column; }
+    .footer .footerfoot {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr; }
+    .footer .footerdec {
+      background-color: #DBCCBB; }
+    .footer .iframe {
+      width: 400px; }
+  /* PRODUCTOS */
+  .fotosMain {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+  /* CUIDADOS */
+  .containerCuidados main {
+    display: flex;
+    flex-direction: column; }
+  /* NOSOTROS */
+  .containerNos {
+    display: flex;
+    flex-direction: column; }
+    .containerNos .textnosotrosp2 {
+      text-align: center; }
+    .containerNos .containerNos .FotoNos2 section img {
+      display: flex;
+      flex-direction: row;
+      width: 400px;
+      padding: 0;
+      justify-content: center; }
+    .containerNos .FotoAnillosnos1 section img {
+      display: flex;
+      flex-direction: column;
+      width: 400px;
+      padding: 0;
+      margin: 0;
+      justify-content: center; }
+    .containerNos .FotoAnillosnos1 section .iframespotify {
+      width: 600px; }
+  /* CONTACTO */
+  .container {
+    display: flex;
+    flex-direction: column; }
+    .container .contactform {
+      width: 400px; }
+    .container .contacto, main .container .textformp {
+      text-align: center; }
+    .container .textformp {
+      text-align: center; } }
+
+@media (max-width: 560px) {
+  .fotosMain {
+    display: grid;
+    grid-template-columns: 1fr; }
+  .containerprod {
+    padding: 0; }
+  .fotosMain figure {
+    text-align: center; }
+  .iframe {
+    width: 300px; }
+  .containerNos section img {
+    width: 300px;
+    padding: 0; }
+  .iframespotify {
+    width: 300px; }
+  .contactform,
+  .formContacto,
+  form {
+    width: 300px; }
+  #button {
+    width: 220px; }
+  .contacto, main .container .textformp {
+    text-align: center; }
+  .textformp {
+    text-align: center; } }
 
 .containerIndex {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, auto);
-    gap: 30px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "header" "contenido" "newsletter" "footerfoot";
-}
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto);
+  gap: 30px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "header" "contenido" "newsletter" "footerfoot"; }
 
 .Contenido {
-    grid-area: contenido;
-}
+  grid-area: contenido; }
 
 .newsletter {
-    grid-area: newsletter;
-}
+  grid-area: newsletter; }
 
 .footerfoot {
-    grid-area: footerfoot;
-}
+  grid-area: footerfoot; }
 
 .bgBodycolor {
-    background-color: #F0E9E1;
-}
+  background-color: #F0E9E1; }
 
 .bgNavcolor {
-    background-color: #DBCCBB;
-}
+  background-color: #DBCCBB; }
 
 .footerdec {
-    background: linear-gradient(220deg, #DBCCBB, #b5997699);
-}
-
-#botonera img {
-    width: 150px;
-}
+  background: linear-gradient(220deg, #DBCCBB, #b5997699); }
 
 .sacarItemlist {
-    list-style-type: none;
-}
+  list-style-type: none; }
 
 .contenido {
-    display: grid;
-    max-width: 100%;
-    margin: 20px;
-    padding: 40px;
-}
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  max-width: 100%;
+  margin: 20px;
+  padding: 40px; }
 
-.imgIcon {
-    display: flex;
-    width: 40px;
-    align-self: center;
-}
-
-.contenidoflex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    opacity: 0.8;
-    transition: width 0.5s;
-}
-
-.contenidoflex:hover {
+.contenidogrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  opacity: 0.8;
+  transition: width 0.5s; }
+  .contenidogrid:hover {
     opacity: 1;
     transform: scale(1.1);
-    width: 101%;
-}
+    width: 101%; }
 
-.cardcard1 {
-    transition: width 0.2;
-}
+.fa {
+  color: #2c2318; }
 
-.cardcard2 {
-    transition: width 0.4;
-}
+.contenidoflex2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  opacity: 0.8;
+  transition: width 0.5s; }
+  .contenidoflex2:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    width: 101%; }
 
-.cardcard3 {
-    transition: width 0.6;
-}
-
-.contenidofont {
-    text-decoration: none;
+a {
+  text-decoration: none; }
+  a .contenidofont {
     font-size: 2rem;
     font-family: "Inter", sans-serif;
     color: #1C1915;
-    display: inline-block;
-    flex-direction: column;
     transition: font-size 0.5s;
-}
+    text-decoration: none; }
+    a .contenidofont:hover {
+      font-size: 2.1rem; }
 
-.contenidofont:hover {
-    font-size: 2.1rem;
-}
+div .card {
+  background-color: antiquewhite;
+  border-radius: 1rem;
+  border-color: #b5997699; }
+
+div .card-img-top {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem; }
+
+div .cardMcardM1 {
+  transition: width 0.2; }
+
+div .cardMcardM2 {
+  transition: width 0.4; }
+
+div .cardMcardM3 {
+  transition: width 0.6; }
 
 .newslettlerInfo {
-    display: grid;
-    grid-template-rows: 1fr;
-    text-decoration: none;
-    font: "Inter", sans-serif;
-    font-size: 1.8rem;
-    color: #1C1915;
-    width: 450px;
-    margin: auto;
-    padding: 30px 40px;
-    background-color: #b5997699;
-    box-sizing: border-box;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-radius: 7px;
-}
+  display: grid;
+  grid-template-rows: 1fr;
+  text-decoration: none;
+  font: "Inter", sans-serif;
+  font-size: 1.8rem;
+  color: #1C1915;
+  width: 450px;
+  margin: auto;
+  padding: 30px 40px;
+  background-color: #b5997699;
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 7px; }
 
 form h2 {
-    text-align: center;
-}
+  text-align: center; }
 
 #button {
-    background: linear-gradient(#4C371C, #2c2318);
-    color: #fff;
-    border: none;
-    padding: 10px;
-    width: 370px;
-    margin-top: 20px;
-    cursor: pointer;
-    opacity: 0.9;
-}
+  background: linear-gradient(#4C371C, #2c2318);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  width: 370px;
+  margin-top: 20px;
+  cursor: pointer;
+  opacity: 0.9; }
+  #button:hover {
+    opacity: 1; }
 
-#button:hover {
-    opacity: 1;
-}
+.footer {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none; }
+
+.breadcrumb {
+  font-size: 1.5rem;
+  color: #1C1915;
+  margin: 20px; }
+  .breadcrumb a {
+    text-decoration: none;
+    color: #1C1915;
+    opacity: 0.8; }
+    .breadcrumb a:hover {
+      opacity: 1;
+      color: #1C1915;
+      text-decoration: underline; }
 
 .containerprod {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 2rem;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  padding-top: 0; }
 
 .fotosMain {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
 
-.h1productos {
-    display: flex;
-    font-family: 'Abril Fatface', cursive;
+.categorias {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "titulo" "form1" "form2";
+  padding: 15px; }
+  .categorias .h1productos {
+    grid-area: titulo;
     text-align: center;
-    justify-content: center;
-    font-size: 3.5rem;
-    margin-top: 20px;
-}
-
-.h2categorias {
-    display: flex;
-    flex-direction: row;
-    font-family: "Inter", sans-serif;
-    font-size: 2.5rem;
-    margin-top: 20px;
-    padding: 10px;
-}
-
-.categoria2 {
-    display: flex;
-    flex-direction: row;
-    text-align: left;
-    font: "Inter", sans-serif;
-    font-size: 1.8rem;
-    color: #1C1915;
-    margin-top: 20px;
-    width: 50px;
-}
-
-.formtalles {
-    list-style-type: none;
-    text-decoration: none;
-    text-align: left;
-    font: "Inter", sans-serif;
-    font-size: 1.5rem;
-    color: #1C1915;
-    margin-top: 20px;
-}
+    font-size: 3rem;
+    margin-right: 20px;
+    margin-bottom: 20px; }
+  .categorias select {
+    grid-area: form1;
+    width: 100px;
+    height: 30px; }
+    .categorias select h2 {
+      font-size: 1.5rem; }
+      .categorias select h2 .h2categorias {
+        font-family: "Inter", sans-serif;
+        font-size: 1.5rem;
+        margin-top: 20px;
+        padding: 10px; }
+    .categorias select .categoria2 {
+      text-align: left;
+      font-family: "Inter", sans-serif;
+      font-size: 1.5rem;
+      color: #1C1915;
+      margin-top: 20px;
+      max-width: 50px; }
+  .categorias select {
+    grid-area: form2;
+    width: 100px;
+    height: 30px; }
+    .categorias select .formtalles {
+      list-style-type: none;
+      text-decoration: none;
+      text-align: left;
+      font-family: "Inter", sans-serif;
+      font-size: 1.5rem;
+      color: #1C1915;
+      margin-top: 20px; }
 
 .containerCuidados {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 20px 20px;
-    grid-auto-flow: row;
-    grid-template-areas: "cuidadostittle" "cuidadostext" "cuidadoseslogan";
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
 
-.cuidadostittle {
-    grid-area: cuidadostittle;
-}
+.containerNos {
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "NosotrostextT NosotrostextT" "Nosotrostext1 FotoAnillosnos1" "FotoNos2 Nosotrostext2" "Nosotrostext3 Nosotrostext3" "iframespotify iframespotify";
+  align-items: center;
+  justify-items: center;
+  font-family: "Inter", sans-serif; }
 
-.cuidadostext {
-    grid-area: cuidadostext;
-}
+.NosotrostextT {
+  grid-area: NosotrostextT; }
 
-.cuidadoseslogan {
-    grid-area: cuidadoseslogan;
-}
+.Nosotrostext1 {
+  grid-area: Nosotrostext1; }
+
+.FotoAnillosnos1 {
+  grid-area: FotoAnillosnos1; }
+
+.FotoNos2 {
+  grid-area: FotoNos2; }
+
+.Nosotrostext2 {
+  grid-area: Nosotrostext2; }
+
+.Nosotrostext3 {
+  grid-area: Nosotrostext3; }
+
+.iframespotify {
+  grid-area: iframespotify; }
 
 main .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-auto-columns: 1fr;
-    grid-auto-rows: 1fr;
-    gap: 30px 20px;
-    grid-auto-flow: row;
-    grid-template-areas: "contactoText contactoForm";
-    justify-items: center;
-    align-items: center;
-}
-
-.contactoText {
-    grid-area: contactoText;
-}
-
-.contactoForm {
-    grid-area: contactoForm;
-}
-
-.contacto,
-.textformp {
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 30px 20px;
+  grid-auto-flow: row;
+  grid-template-areas: "contactoText contactoForm";
+  justify-items: center;
+  align-items: center; }
+  main .container .contactoForm {
+    grid-area: contactoForm; }
+  main .container .contacto, main .container .textformp {
     font-family: "Inter", sans-serif;
     font-size: 3.5rem;
     text-align: center;
     padding: 30px;
-    margin: 20px;
-}
-
-.textformp {
-    font-size: 2.5rem;
-}
-
-.contactform {
+    margin: 20px; }
+  main .container .textformp {
+    font-size: 2.5rem; }
+  main .container .contactform {
     list-style-type: none;
     text-decoration: none;
     text-align: center;
@@ -554,10 +634,8 @@ main .container {
     font-size: 1.8rem;
     color: #1C1915;
     margin: 40px;
-    padding: 20px, 10px;
-}
-
-.formContacto {
+    padding: 20px, 10px; }
+  main .container .formContacto {
     display: grid;
     grid-template-rows: 1fr;
     text-decoration: none;
@@ -571,5 +649,165 @@ main .container {
     box-sizing: border-box;
     margin-top: 20px;
     margin-bottom: 20px;
-    border-radius: 7px;
-}
+    border-radius: 7px; }
+
+@media (max-width: 965px) {
+  .contenidoflex2 {
+    display: flex;
+    flex-direction: row; }
+  .footer {
+    display: flex;
+    flex-direction: column; }
+    .footer .footerfoot {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr; }
+    .footer .footerdec {
+      background-color: #DBCCBB; }
+    .footer iframe {
+      width: 400px; }
+  main figure img {
+    padding: 5px;
+    margin: 5px; }
+  .containerCuidados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px; }
+  /* NOSOTROS */
+  .containerNos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .containerNos .Nosotrostext1 {
+      text-align: center; }
+    .containerNos .textnosotrosp2 {
+      text-align: center; }
+    .containerNos section .FotoNos2 img {
+      display: flex;
+      flex-direction: column;
+      width: 500px;
+      padding: 0;
+      justify-content: center; }
+    .containerNos section .FotoAnillosnos1 img {
+      display: flex;
+      flex-direction: column;
+      width: 500px;
+      padding: 0;
+      margin: 0;
+      justify-content: center; }
+    .containerNos section .iframespotify {
+      width: 800px; }
+  /* CONTACTO */
+  .container {
+    display: flex;
+    flex-direction: column; }
+    .container .contactform {
+      width: 800px; }
+    .container .contacto, main .container .textformp {
+      text-align: center; }
+    .container .textformp {
+      text-align: center; }
+    .container .logonav img {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-items: center; } }
+
+@media (max-width: 767px) {
+  body {
+    background-color: #F0E9E1; }
+  /* INDEX */
+  .contenidoflex2 {
+    display: flex;
+    flex-direction: column; }
+  .contenidogrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    opacity: 0.8;
+    transition: width 0.5s; }
+    .contenidogrid:hover {
+      opacity: 1;
+      transform: scale(1.1);
+      width: 101%; }
+  .footer {
+    display: flex;
+    flex-direction: column; }
+    .footer .footerfoot {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr; }
+    .footer .footerdec {
+      background-color: #DBCCBB; }
+    .footer .iframe {
+      width: 400px; }
+  /* PRODUCTOS */
+  .fotosMain {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+  /* CUIDADOS */
+  .containerCuidados main {
+    display: flex;
+    flex-direction: column; }
+  /* NOSOTROS */
+  .containerNos {
+    display: flex;
+    flex-direction: column; }
+    .containerNos .textnosotrosp2 {
+      text-align: center; }
+    .containerNos .containerNos .FotoNos2 section img {
+      display: flex;
+      flex-direction: row;
+      width: 400px;
+      padding: 0;
+      justify-content: center; }
+    .containerNos .FotoAnillosnos1 section img {
+      display: flex;
+      flex-direction: column;
+      width: 400px;
+      padding: 0;
+      margin: 0;
+      justify-content: center; }
+    .containerNos .FotoAnillosnos1 section .iframespotify {
+      width: 600px; }
+  /* CONTACTO */
+  .container {
+    display: flex;
+    flex-direction: column; }
+    .container .contactform {
+      width: 400px; }
+    .container .contacto, main .container .textformp {
+      text-align: center; }
+    .container .textformp {
+      text-align: center; } }
+
+@media (max-width: 560px) {
+  .fotosMain {
+    display: grid;
+    grid-template-columns: 1fr; }
+  .containerprod {
+    padding: 0; }
+  .fotosMain figure {
+    text-align: center; }
+  .iframe {
+    width: 300px; }
+  .containerNos section img {
+    width: 300px;
+    padding: 0; }
+  .iframespotify {
+    width: 300px; }
+  .contactform,
+  .formContacto,
+  form {
+    width: 300px; }
+  #button {
+    width: 220px; }
+  .contacto, main .container .textformp {
+    text-align: center; }
+  .textformp {
+    text-align: center; } }

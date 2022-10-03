@@ -601,6 +601,10 @@ footer .footer {
       width: 100%;
       max-height: 250px;
       size-adjust: 100%; }
+    .contenido .newslettlerInfo {
+      width: 300px; }
+      .contenido .newslettlerInfo #button {
+        width: 220px; }
     .contenido .portadaIndex {
       font-family: "Inter", sans-serif;
       font-size: 2.5rem;
